@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    height: 52px;
+    justify-content: space-between;
+    margin: 24px 156px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.logo-container > a {
+    display: flex;
+}
+
+.logo-image {
+    width: 172px;
+}
+
+.logo-text > span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn-container {
+    display: flex;
+    gap: 24px;
+}
+
+.btn-login {
+    color: #2F9C96;
+    padding: 16px;
+}
+
+.btn-create {
+    color: #E5F9E0;
+    background-color: #2F9C96;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.profile {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+}
+
+.profile > img {
+    width: 40px;
+}
+
+.profile > div > h4{
+    font-size: 16px;
+    color: #3A3A3A
+}
+
+.profile > div > p{
+    font-size: 14px;
+    color: #A4A4A4;
+}
+
+
+@media (max-width: 768px) {
+.navbar-container {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    position: relative;
+    }
+
+    .profile  img {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+
+}
