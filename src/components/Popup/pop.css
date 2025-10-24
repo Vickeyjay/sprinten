@@ -28,7 +28,9 @@ h2 {
 .popup {
     box-shadow: 1px 0px 10px rgba(225, 225, 225, 1);
     width: 383px;
-    height: 278px;
+    height: 290px;
+    padding-bottom: 40px;
+    gap: 25px;
 }
 
 .img > img{
@@ -49,9 +51,9 @@ h2 {
 
 
 @media (max-width: 768px) {
-.popup-overlay {
-  position: fixed;
-  width: 100%;
-  overflow-x: hidden;
-}
+
+    .popup-overlay {
+        display: none;
+    }
+
 }

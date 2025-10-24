@@ -4,6 +4,7 @@ import "./chat.css";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { Plus } from 'lucide-react';
 import Pop from '../Popup/popUp';
+import PopMobile from "../Popup/popMobile";
 
 const TemplateChat = () => {
   
@@ -183,6 +184,24 @@ const TemplateChat = () => {
       setShowPopup(false);
     }}
   />
+  
+)}
+
+
+      {showPopup && (
+    <PopMobile 
+        onClose={() => setShowPopup(false)}
+    onJustExport={() => {
+      handleExportFigma();
+      setShowPopup(false);
+    }}
+    onExportAndCreate={() => {
+      // You can add any special export logic here later
+      handleExportFigma();
+      setShowPopup(false);
+    }}
+    />
+  
 )}
 
     </div>

@@ -1,0 +1,22 @@
+.popup-overlay-mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+   .popup-overlay-mobile {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.btn-3 {
+    background-color: #2F9C96;
+    color: #FFFFFF;
+    padding: 16px 60px;
+} 
+}

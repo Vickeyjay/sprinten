@@ -1,6 +1,6 @@
 .template-chat-container {
   display: flex;
-  height: 90vh;
+  height: 75vh;
   background-color: #fff;
 }
 
@@ -207,7 +207,7 @@
 @media (max-width: 768px) {
   .template-chat-container {
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
     width: 100%;
     position: relative;
     overflow-y: scroll;
